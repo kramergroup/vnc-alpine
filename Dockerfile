@@ -63,7 +63,7 @@ COPY assets/fonts.conf /etc/fonts/fonts.conf
 # COPY assets/urxvt/perl /usr/lib/urxvt/perl
 
 # st  as terminal
-RUN apk add --no-cache freetype fontconfig musl xproto libx11 libxft libxext ncurses \
+RUN apk add --no-cache freetype fontconfig xproto libx11 libxft libxext ncurses \
     && rm -rf /apk /tmp/* /var/cache/apk/*
 COPY --from=st-builder /work/st /usr/bin/st
 COPY --from=st-builder /work/st.info /etc/st/st.info
