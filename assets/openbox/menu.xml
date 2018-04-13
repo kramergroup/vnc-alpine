@@ -12,6 +12,11 @@
   </item>
   <separator />
   <menu id="client-list-menu" />
+  <item label="Log Out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
 </menu>
 
 </openbox_menu>
