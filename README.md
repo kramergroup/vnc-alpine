@@ -7,6 +7,8 @@ The container is meant to serve a basis for containerised X11 applications. It h
 - Openbox minimal Window Manager
 - Graphical login
 
+Based on Alpine Linux, the container is less than 150 MB in size. Most of this is the X11 window system. 
+
 ## Usage
 
 The container runs a VNC server on port 5900. This port has to be mapped for VNC clients to access it:
