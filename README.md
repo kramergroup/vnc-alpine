@@ -18,7 +18,8 @@ Once the container is running, point a VNC viewer to `localhost:5900`.
 
 ## User login
 
-A connecting VNC client will be presented the openbox desktop of user *alpine*, which has *full* sudo'er rights.
+A connecting VNC client will be presented with a login window for the first time only. The default username and password are `alpine/alpine`. **Note that terminating the VNC connection is not sufficient
+to logout the user!** 
 
 ### Adding Users
 
