@@ -53,6 +53,13 @@ COPY assets/openbox/mayday/mayday-plane /usr/share/themes/mayday-plane
 COPY assets/openbox/rc.xml /etc/xdg/openbox/rc.xml
 COPY assets/openbox/menu.xml /etc/xdg/openbox/menu.xml
 
+# Login Manager
+RUN apk --no-cache add slim consolekit \
+    && rm -rf /apk /tmp/* /var/cache/apk/*
+RUN /usr/bin/dbus-uuidgen --ensure=/etc/machine-id
+COPY assets/slim/slim.conf /etc/slim.conf
+COPY assets/slim/alpinelinux /usr/share/slim/themes/alpinelinux
+
 # A decent system font
 RUN apk add --no-cache font-noto \
     && rm -rf /apk /tmp/* /var/cache/apk/*
@@ -86,5 +93,4 @@ COPY assets/xinit/xinitrc.d /etc/X11/xinit/xinitrc.d
 
 WORKDIR /home/alpine
 EXPOSE 5900
-USER alpine
 CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
