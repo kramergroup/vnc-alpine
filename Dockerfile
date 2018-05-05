@@ -82,6 +82,7 @@ RUN apk add --no-cache xset \
 COPY assets/xinit/Xresources /etc/X11/Xresources
 COPY assets/xinit/xinitrc.d /etc/X11/xinit/xinitrc.d
 
+COPY assets/x11vnc-session.sh /root/x11vnc-session.sh
 
 #RUN apk add --no-cache dbus
 #RUN apk add dbus-x11 --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/main/ --allow-untrusted
