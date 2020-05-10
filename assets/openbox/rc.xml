@@ -50,7 +50,7 @@
 
 <theme>
   <name>mayday-arc</name>
-  <titleLayout>NLIMC</titleLayout>
+  <titleLayout>NLMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -64,8 +64,8 @@
   <keepBorder>yes</keepBorder>
   <animateIconify>no</animateIconify>
   <font place="ActiveWindow">
-    <name>sans</name>
-    <size>10</size>
+    <name>Noto Sans Medium</name>
+    <size>14</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -73,8 +73,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveWindow">
-    <name>sans</name>
-    <size>10</size>
+    <name>Noto Sans Medium</name>
+    <size>14</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -82,8 +82,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuHeader">
-    <name>sans</name>
-    <size>12</size>
+    <name>Noto Sans Medium</name>
+    <size>14</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -91,8 +91,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuItem">
-    <name>sans</name>
-    <size>11</size>
+    <name>Noto Sans Medium</name>
+    <size>14</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -100,8 +100,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="ActiveOnScreenDisplay">
-    <name>sans</name>
-    <size>11</size>
+    <name>Noto Sans Medium</name>
+    <size>14</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -109,8 +109,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveOnScreenDisplay">
-    <name>sans</name>
-    <size>11</size>
+    <name>Noto Sans Medium</name>
+    <size>14</size>
     <!-- font size in points -->
     <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
@@ -164,10 +164,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
 <margins>
-  <top>0</top>
+  <top>2</top>
   <bottom>2</bottom>
-  <left>0</left>
-  <right>0</right>
+  <left>2</left>
+  <right>2</right>
 </margins>
 
 <dock>
@@ -639,7 +639,7 @@
        submenu will not be hidden until a different submenu is opened -->
   <showIcons>yes</showIcons>
   <!-- controls if icons appear in the client-list-(combined-)menu -->
-  <manageDesktops>yes</manageDesktops>
+  <manageDesktops>no</manageDesktops>
   <!-- show the manage desktops section in the client-list-(combined-)menu -->
 </menu>
 

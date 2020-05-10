@@ -1,0 +1,5 @@
+# Set the background color
+xsetroot -solid '#004d99' &
+
+# Start the dock
+(sleep 3s && wbar) &

@@ -1,0 +1,3 @@
+xsetroot -solid '#004d99'
+xmodmap -e "keysym Super_L = Multi_key"
+xset s off

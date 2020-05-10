@@ -1,13 +1,13 @@
-# vnc-alpine
+# vnc-alpine - MatMod version
 
 This container provides a [VNC](https://en.wikipedia.org/wiki/Virtual_Network_Computing)-enabled container based on Alpine Linux.
 
 The container is meant to serve a basis for containerised X11 applications. It has the following features:
 
 - Openbox minimal Window Manager
-- Graphical login
+- WBar dock
 
-Based on Alpine Linux, the container is less than 150 MB in size. Most of this is the X11 window system. 
+Based on Alpine Linux, the container is less than 150 MB in size. Most of this is the X11 window system.
 
 ## Usage
 
@@ -21,8 +21,7 @@ Once the container is running, point a VNC viewer to `localhost:5900`.
 
 ## User login
 
-A connecting VNC client will be presented with a login window for the first time only. The default username and password are `alpine/alpine`. **Note that terminating the VNC connection is not sufficient
-to logout the user!**
+A connecting VNC client will have access to the **alpine/alpine** user's desktop.
 
 ### Adding Users
 
@@ -36,6 +35,10 @@ The usual `useradd/passwd` feature of linux is available. To add a user to a run
 
 The container uses the [Openbox](https://en.wikipedia.org/wiki/Openbox) window manager.
 Openbox is lightweight and easy to configure (via xml files). Programs are started using a right-click, which produces a menu with options.
+
+## WBar dock
+
+The [WBar](https://code.google.com/archive/p/wbar/) dock is installed. It can be configured via `assets/wbar/wbar.cfg`.
 
 ## Terminal
 

@@ -8,14 +8,7 @@
 <menu id="root-menu" label="Openbox 3">
   <!-- This requires the presence of the 'menu' package to work -->
   <item label="Terminal">
-    <action name="Execute"><execute>/usr/bin/st</execute></action>
-  </item>
-  <separator />
-  <menu id="client-list-menu" />
-  <item label="Log Out">
-    <action name="Exit">
-      <prompt>yes</prompt>
-    </action>
+    <action name="Execute"><execute>/usr/bin/st -f "Noto Sans Mono:size=14"</execute></action>
   </item>
 </menu>
 
